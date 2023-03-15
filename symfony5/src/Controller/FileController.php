@@ -6,6 +6,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use App\Service\UploadHelper;
 use App\Form\FileUploadType;
+use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
 class FileController extends AbstractController
@@ -25,6 +26,13 @@ class FileController extends AbstractController
             {
               $directory = $helper->getTargetDirectory();
               $fullPath = $directory . '/' . $file;
+
+              $chemin_script = '/home/scripts';
+              $cmd = sprintf("run-parts %s %s", $chemin_script, $file);
+              $output = shell_exec(sprintf("%s > /dev/null 2>&1 &", $cmd));
+
+              return new Response("Script FTP en cours d'exécution en arrière-plan.");
+
             }
       }
 
