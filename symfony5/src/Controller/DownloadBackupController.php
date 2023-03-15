@@ -14,18 +14,27 @@ class DownloadBackupController extends AbstractController
     #[Route('/api/backup/download', name: 'backup_download', methods: 'GET')]
     public function downloadBackupAction(): BinaryFileResponse
     {
-        $date  = '';
-        $file = '/var/www/html/backup/site/backup_'.$date.'.tar.gz';
+        $backupPath = '/var/www/html/backup';
+        $backupFilename = 'backup_' . date('Y-m-d') . '.tar.gz';
+        $fullPath = $backupPath . '/' . $backupFilename;
 
-        if (!file_exists($file)) {
-            throw $this->createNotFoundException('The file does not exist');
+
+        if (!file_exists($fullPath)) {
+            throw $this->createNotFoundException('Le fichier de sauvegarde n\'existe pas.');
         }
 
-        $response = new BinaryFileResponse($file);
+        // Création d'un objet BinaryFileResponse avec le fichier de sauvegarde
+        $response = new BinaryFileResponse($fullPath);
+        // Définition des headers de la réponse
         $response->headers->set('Content-Type', 'application/gzip');
-        $response->setContentDisposition(ResponseHeaderBag::DISPOSITION_ATTACHMENT, 'backup.tar.gz');
+        $response->setContentDisposition(
+            ResponseHeaderBag::DISPOSITION_ATTACHMENT,
+            $backupFilename,
+            iconv('UTF-8', 'ASCII//TRANSLIT', $backupFilename)
+        );
 
         return $response;
 
     }
+
 }

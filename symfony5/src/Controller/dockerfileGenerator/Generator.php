@@ -17,8 +17,8 @@ $app = new Symfony\Component\Console\Application();
                     'db' => [
                         'image' => 'mysql:latest',
                         'environment' => [
-                            'MYSQL_ROOT_PASSWORD' => 'root',
-                            'MYSQL_DATABASE' => 'mysqldb',
+                            'MYSQL_ROOT_PASSWORD' => 'password',
+                            'MYSQL_DATABASE' => 'sites',
                         ],
                     ],
                 ],

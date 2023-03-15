@@ -8,7 +8,7 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class FtpController extends AbstractController
 {
-    #[Route('/envoi-ftp/{fichier1}/{fichier2}', name: 'envoi_ftp', methods: 'POST')]
+    #[Route('/ftp/upload/{fichier1}/{fichier2}', name: 'ftp_upload', methods: 'POST')]
     public function envoiFTP($fichier1, $fichier2): Response
     {
         $chemin_script = '/home/scripts';
