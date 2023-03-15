@@ -46,6 +46,3 @@ $app = new Symfony\Component\Console\Application();
 
 // Output a message to the user
 console.log( $filename . 'generated with success');
-
-// Render the form in the view
-echo $form->createView();
