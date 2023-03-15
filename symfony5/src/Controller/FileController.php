@@ -6,11 +6,12 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use App\Service\UploadHelper;
 use App\Form\FileUploadType;
+use Symfony\Component\Routing\Annotation\Route;
 
 class FileController extends AbstractController
 {
     #[Route('/file', name: 'app_file')]
-    public function index(Request $request, UploadHelper $helper)
+    public function index(Request $request, UploadHelper $helper): \Symfony\Component\HttpFoundation\Response
     {
         $form = $this->createForm(FileUploadType::class);
         $form->handleRequest($request);
