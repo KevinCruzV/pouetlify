@@ -43,8 +43,6 @@ $app = new Symfony\Component\Console\Application();
         // Save the Docker Compose file to the host's storage
         $filename = 'Dockerfile.' . $choice . '.yml';
         file_put_contents($filename, $yaml);
-    }
-}
 
 // Output a message to the user
 console.log( $filename . 'generated with success');
