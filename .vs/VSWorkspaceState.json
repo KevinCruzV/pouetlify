@@ -1,0 +1,13 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\symfony5",
+    "\\symfony5\\bin",
+    "\\symfony5\\config",
+    "\\symfony5\\public",
+    "\\symfony5\\src",
+    "\\symfony5\\src\\Service"
+  ],
+  "SelectedNode": "\\symfony5\\src\\Controller",
+  "PreviewInSolutionExplorer": false
+}
