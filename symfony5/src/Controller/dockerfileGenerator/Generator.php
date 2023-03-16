@@ -8,9 +8,10 @@ use Symfony\Component\Yaml\Yaml;
 
 // Create the Symfony application
 $app = new Symfony\Component\Console\Application();
+$choice = $_GET["choice"];
 
         // Generate the Docker Compose file
-        if ($choice === 'sql') {
+        if ($choice === 'mysql') {
             $yaml = Yaml::dump([
                 'version' => '3',
                 'services' => [

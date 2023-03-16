@@ -3,7 +3,7 @@ import styles from './style.module.css'
 
 export default function ChooseArchi() {
 return (
-<form method="post" enctype="multipart/form-data" className={styles.container}>
+<form method="post" enctype="multipart/form-data" className={styles.container} name="choice">
    
         <input type="text" placeholder='Name of your web site' />
         <div>
@@ -14,6 +14,7 @@ return (
         </select>
         </div>
     <input type="submit" value="Submit" />
+
 </form>
 )
 }
