@@ -3,6 +3,9 @@ import {Routes, Route} from 'react-router-dom'
 import Home from './component/pages/Home';
 import DashBoardPage from './component/pages/Dashboard';
 import Ftp from './component/pages/Ftp';
+import React from "react";
+
+
 
 function App() {
   return (
