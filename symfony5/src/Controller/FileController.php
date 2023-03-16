@@ -11,7 +11,7 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class FileController extends AbstractController
 {
-    #[Route('/file', name: 'app_file')]
+    #[Route('/file', name: 'app_file', methods: 'POST')]
     public function index(Request $request, UploadHelper $helper): \Symfony\Component\HttpFoundation\Response
     {
       //  $form = $this->createForm(FileUploadType::class);

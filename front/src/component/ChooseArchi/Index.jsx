@@ -1,20 +1,46 @@
-import React from 'react'
+import React, { useState } from 'react';
+import axios from 'axios';
+import { useHistory } from 'react-router-dom';
 import styles from './style.module.css'
 
 export default function ChooseArchi() {
-return (
-<form method="post" enctype="multipart/form-data" className={styles.container} name="choice">
-   
-        <input type="text" placeholder='Name of your web site' />
-        <div>
-        <label for="archi"> Choose a Architecture:</label>
-        <select name="archi" id="archi">
-            <option value="ftp">ftp</option>
-            <option value="mysql">mysql</option>
-        </select>
-        </div>
-    <input type="submit" value="Submit" />
 
-</form>
-)
+    const [selectedOption, setSelectedOption] = useState('');
+    const history = useHistory();
+
+    const handleOptionChange = (event) => {
+        setSelectedOption(event.target.value);
+      }
+    
+    const handleSubmit = (event) => {
+        event.preventDefault();
+    
+        const data = {
+          option: selectedOption
+        };
+    
+        axios.post('/api/generator', data)
+          .then(response => {
+            console.log(response);
+            history.push('/dashboard-page');
+          })
+          .catch(error => {
+            console.log(error);
+          });
+    }
+
+    return (
+        <form onSubmit={handleSubmit} className={styles.container}>
+          <label>
+            Option :
+            <select value={selectedOption} onChange={handleOptionChange}>
+              <option value="">-- Choisissez une option --</option>
+              <option value="ftp">FTP</option>
+              <option value="mysql">MySQL</option>
+            </select>
+          </label>
+          <button type="submit">Envoyer</button>
+        </form>
+      );
+
 }
