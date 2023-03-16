@@ -4,7 +4,7 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Yaml\Yaml;
 
 // Load the composer autoloader
-require_once __DIR__ . '/vendor/autoload.php';
+// require_once __DIR__ . '/vendor/autoload.php';
 
 // Create the Symfony application
 $app = new Symfony\Component\Console\Application();
@@ -46,3 +46,5 @@ $app = new Symfony\Component\Console\Application();
 
 // Output a message to the user
 console.log( $filename . 'generated with success');
+
+?>
