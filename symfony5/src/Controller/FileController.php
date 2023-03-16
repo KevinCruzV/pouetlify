@@ -14,12 +14,12 @@ class FileController extends AbstractController
     #[Route('/file', name: 'app_file')]
     public function index(Request $request, UploadHelper $helper): \Symfony\Component\HttpFoundation\Response
     {
-        $form = $this->createForm(FileUploadType::class);
-        $form->handleRequest($request);
+      //  $form = $this->createForm(FileUploadType::class);
+        //$form->handleRequest($request);
 
-        if ($form->isSubmitted() && $form->isValid()) 
-        {
-            $uploadFile = $form['uploadFile']->getData();
+        //if ($form->isSubmitted() && $form->isValid())
+        //{
+            $uploadFile = $_POST['uploadFile']->getData();
             $file = $helper->uploadFile($uploadFile);
 
             if (null !== $file)
@@ -34,10 +34,7 @@ class FileController extends AbstractController
               return new Response("Script FTP en cours d'exécution en arrière-plan.");
 
             }
-      }
+     // }
 
-        return $this->render('files/upload.html.twig', [
-            'form' => $form->createView(),
-          ]);
     }
 }
