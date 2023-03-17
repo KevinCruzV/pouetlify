@@ -19,7 +19,7 @@ class FileController extends AbstractController
 
         //if ($form->isSubmitted() && $form->isValid())
         //{
-            $uploadFile = $_POST['uploadFile']->getData();
+            $uploadFile = $_POST['file']->getData();
             $file = $helper->uploadFile($uploadFile);
 
             if (null !== $file)
