@@ -2,20 +2,23 @@
 
 use Doctrine\ORM\EntityManagerInterface;
 use Doctrine\DBAL\Connection;
+use Doctrine\Persistence\ManagerRegistry;
 
 class DatabaseController extends AbstractController
 {
-    private $entityManager;
 
-    public function __construct(EntityManagerInterface $entityManager)
+    public ManagerRegistery $managerRegistery;
+
+    public function __construct(ManagerRegistery $managerRegistery)
     {
-        $this->entityManager = $entityManager;
+        $this->managerRegistery = $managerRegistery;
     }
 
     #[Route('/database', methods: 'GET')]
-    public function GetDatabaseInfo(Connection $connection): Response
+    public function getDatabaseInfo()
     {
-        $query = $connection->fetchAllAssociative('SHOW TABLE STATUS');
+        $connection = $this->managerRegistery->getConnection('sites');
+        $query = "SHOW TABLE STATUS";
         $statement = $connection->prepare($query);
         $statement->execute();
         $result = $statement->fetchAll();
