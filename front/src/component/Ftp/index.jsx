@@ -65,7 +65,7 @@ export default function Ftp() {
             <p>ou faites glisser un fichier ici</p>
             <button type="submit">Envoyer</button>
         </form>
-        <button className="button-home" onClick={handleNavigate}>Accueil</button>
+        <button className="button-home" onClick={handleNavigate}>Dashboard</button>
         </>
     );
     
