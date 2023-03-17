@@ -2,13 +2,13 @@ import React, { useState } from 'react';
 import styles from './style.module.css'
 import iconeFolder from '../../icons8-dossier-256.png'
 import axios from 'axios';
-import { useHistory } from "react-router-dom";
+import { useNavigate } from 'react-router-dom';
 
 export default function Ftp() {
     
     const [selectedFile, setSelectedFile] = useState(null);
     const [dragging, setDragging] = useState(false);
-    const history = useHistory();
+    const navigate = useNavigate();
 
     const handleSubmit = (event) => {
         event.preventDefault();
@@ -49,7 +49,7 @@ export default function Ftp() {
     }
 
     const handleNavigate = () => {
-        history.push("/dashboard-page");
+        navigate('/dashboard-page');
     };
     
     return (

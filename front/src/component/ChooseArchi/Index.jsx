@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import { useHistory } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import styles from './style.module.css'
 
 export default function ChooseArchi() {
 
     const [selectedOption, setSelectedOption] = useState('');
-    const history = useHistory();
+    const navigate = useNavigate();
 
     const handleOptionChange = (event) => {
         setSelectedOption(event.target.value);
@@ -22,7 +22,7 @@ export default function ChooseArchi() {
         axios.post('/api/generator', data)
           .then(response => {
             console.log(response);
-            history.push('/dashboard-page');
+            navigate('/dashboard-page');
           })
           .catch(error => {
             console.log(error);

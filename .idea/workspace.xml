@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6693dde2-8f7e-46a1-a8f1-6d574b0894a5" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/component/ChooseArchi/Index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/component/ChooseArchi/Index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/component/Ftp/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/component/Ftp/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/component/backup.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony5/src/Controller/FileController.php" beforeDir="false" afterPath="$PROJECT_DIR$/symfony5/src/Controller/FileController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony5/src/Controller/dockerfileGenerator/Generator.php" beforeDir="false" afterPath="$PROJECT_DIR$/symfony5/src/Controller/dockerfileGenerator/GeneratorController.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,15 +70,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/front/src/component/Ftp" />
@@ -116,5 +111,8 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>
