@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6693dde2-8f7e-46a1-a8f1-6d574b0894a5" name="Changes" comment="" />
+    <list default="true" id="6693dde2-8f7e-46a1-a8f1-6d574b0894a5" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/front/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/front/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/Axios/Backup.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/component/pages/Dashboard/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/component/pages/Dashboard/index.jsx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -93,7 +99,7 @@
       <updated>1678801112534</updated>
       <workItem from="1678801120816" duration="51000" />
       <workItem from="1678958226980" duration="2188000" />
-      <workItem from="1679039860268" duration="618000" />
+      <workItem from="1679039860268" duration="3887000" />
     </task>
     <servers />
   </component>
