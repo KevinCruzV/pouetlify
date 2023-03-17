@@ -3,5 +3,5 @@
 #    controller: App\Controller\DefaultController::index
 
 database_size:
-  path: /database/size
+  path: /database
   controller: App\Controller\DatabaseController::getSize

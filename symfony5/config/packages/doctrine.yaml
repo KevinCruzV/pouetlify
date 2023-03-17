@@ -7,3 +7,6 @@ doctrine:
         password:             'password'
         driver:               pdo_mysql
         url:                  'mysql://root:password@127.0.0.1:3306/sites'
+
+        types:
+            DoctrineBundle: Doctrine\Bundle\DoctrineBundle
