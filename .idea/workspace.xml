@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="6693dde2-8f7e-46a1-a8f1-6d574b0894a5" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/component/Ftp/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/component/Ftp/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/component/pages/Dashboard/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/component/pages/Dashboard/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/component/pages/Dashboard/style.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/component/pages/Dashboard/style.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony5/src/Controller/FtpController.php" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +96,7 @@
       <updated>1678801112534</updated>
       <workItem from="1678801120816" duration="51000" />
       <workItem from="1678958226980" duration="2188000" />
-      <workItem from="1679039860268" duration="5040000" />
+      <workItem from="1679039860268" duration="5729000" />
     </task>
     <servers />
   </component>
