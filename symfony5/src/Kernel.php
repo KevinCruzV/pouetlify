@@ -10,7 +10,7 @@ class Kernel extends BaseKernel
     use MicroKernelTrait;
 }
 
-class AppKernel extends Kernel
+class AppKernel extends BaseKernel
 {
     public function registerBundles()
     {
