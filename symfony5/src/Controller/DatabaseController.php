@@ -1,6 +1,7 @@
 <?php 
 
 use Doctrine\ORM\EntityManagerInterface;
+use Doctrine\DBAL\Connection;
 
 class DatabaseController extends AbstractController
 {
@@ -10,12 +11,11 @@ class DatabaseController extends AbstractController
     {
         $this->entityManager = $entityManager;
     }
-    
+
     #[Route('/database', methods: 'GET')]
-    public function getDatabaseInfo()
+    public function GetDatabaseInfo(Connection $connection): Response
     {
-        $connection = $this->entityManager->getConnection();
-        $query = "SHOW TABLE STATUS";
+        $query = $connection->fetchAllAssociative('SHOW TABLE STATUS');
         $statement = $connection->prepare($query);
         $statement->execute();
         $result = $statement->fetchAll();
