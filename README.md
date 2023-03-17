@@ -5,3 +5,6 @@ hosting site project for other sites using cloud with a VM
 pour lancer les deux depuis la vm 
 
 Aller dans : /var/www/html/pouetlify
+
+# Les scripts 
+Dans la VM ils sont dans /home/scripts
